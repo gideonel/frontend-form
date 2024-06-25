@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <form>
+        <h2>create an account</h2>
+        <fieldset>
+            <legend>personal information</legend>
+        <ul>
+            <li>
+                <label for="fullname">Full name</label>
+                <input type="text" name="name" id="fullname" required>
+            </li>
+        </ul>
+        <!-- not that when a placeholder is used, a labell can be used, one must be chosen-->
+        <ul>            
+            <li><input type="email" name="email" id="email" required placeholder=" full name"></ul></li>
+        <ul>
+            <li><label for="dateOfBirth">Date of birth</label></li>
+            <li><input type="date" name="date" id="dateOfBirth"></li>
+        </ul>
+        <ul><label for="telephone">Telephone number</label></ul>
+            <input type="tel" name="phone" id="phone">
+        <ul>
+            <h3>Gender</h3>
+            <input type="radio" name="gender" id="male">
+            <label for="male">male</label>
+
+            <input type="radio" name="gender" id="female" checked>
+            <label for="female">female</label>
+        </ul>
+        <ul>
+            <li>
+                <h3>Marital status</h3>
+                <input type="radio" name="Marital" id="single">
+                <label for="single">single</label>
+                <input type="radio" name="Marital" id="married">
+                <label for="married">married</label>
+                <br>
+                <input type="radio" name="Marital" id="single">
+                <label for="single">single</label>
+                <input type="radio" name="Marital" id="single">
+                <label for="single">single</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>State of origin</h3>
+                 <select name="State">
+                    <option value="lg">Lagos</option>
+                    <option value="ab">Abuja</option>
+                    <option value="ib">Ibadan</option>
+                    <option value="lg">Lagos</option>
+                    <option value="lg">Lagos</option>
+                    <option value="lg">Lagos</option>
+                    <option value="lg">Lagos</option>
+                 </select>
+
+                 <h3>State of origin</h3>
+                 <select name="State">
+                    <optgroup label="southern"> 
+                    <option value="lg">Lagos</option>
+                    <option value="oy">Oyo</option>
+                    <option value="ib">Ibadan</option>
+                     </optgroup>
+
+                     <optgroup label="Northern">
+                    <option value="kd">Kaduna</option>
+                    <option value="kt">Katsina</option>
+                    <option value="kn">Kano</option>
+                     </optgroup>
+                 </select>
+
+            </li>
+        </ul>
+        <ul></ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Information</legend>
+            <ul>
+                <li>
+                    <h3>Obtained Experience</h3>
+                    
+                    <label for="BatchelorDegree">Bachelor Degree</label>
+                    <input type="checkbox" name="edu" id="bsc">
+                    <label for="MasterDegree">Master Degree</label>
+                    <input type="checkbox" name="edu" id="msc">
+                    <label for="BatchelorDegree">Doctor Degree</label>
+                    <input type="checkbox" name="edu" id="phd">
+                </li>
+                <li>
+                    <label for="exp">Years Of Experience </label>
+                    <input type="number" name="number" id="" min="2">
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox" id="accept">
+                    <label for="accept">Accept Our <a href="#">Terms and Conditions</a></label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
